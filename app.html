@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="./assets/css/pages/appScrean/app.css">
+    <script src="./assets/js/app.js" defer></script>
+    <title>TTwiter</title>
+</head>
+
+<body>
+    <header>
+        <img src="./assets/img/Logo TT.png" alt="logo">
+        <div class="header-busca">
+            <input type="text" id="busca" placeholder="Buscar">
+            <label for="busca"><i class="bi bi-search"></i></label>
+        </div>
+    </header>
+
+    <main>
+        <nav class="menu-navbar">
+            <ul>
+                <li class="navbar-itens"><img src="./assets/img/HomeOutlined.png" alt="Início"></li>
+                <li class="navbar-itens"><img src="./assets/img/BellOutlined.png" alt="Notificações"></li>
+                <li class="navbar-itens"><img src="./assets/img/CommentOutlined.png" alt="Mensagens"></li>
+                <li class="navbar-itens"><img src="./assets/img/SettingOutlined.png" alt="Configurações"></li>
+            </ul>
+        </nav>
+
+        <div class="posts-area">
+
+            <form id="post-form">
+                <textarea placeholder="No que está pensando...?" rows="3" id="text-area"></textarea>
+
+                <div class="post-btns-container">
+
+                    <div class="icons-container">
+                        <label for="image">
+                            <input type="file" accept="imagem/*" id="image">
+                            <img src="./assets/img/ic_baseline-image.png" alt="inserir imagem">
+                        </label>
+                        <img src="./assets/img/mingcute_emoji-fill.png" alt="inserir emoji">
+                        <img src="./assets/img/ic_outline-link.png" alt="inserir link">
+                    </div>
+                    <button type="submit">Postar</button>
+                </div>
+            </form>
+
+            <div class="post" id="0">
+                <i class="bi bi-x" onclick="removePost('0')"></i>
+                <img src="./assets/img/foto_exemplo.png" alt="imagem do post">
+                <div class="interactive-container">
+                    <div class="user-container">
+                        <div class="imagem"></div>
+                        <h3>@usuário</h3>
+                    </div>
+                    <div class="post-icons-container">
+                        <i class="bi bi-chat-dots"></i>
+                        <i class="bi bi-hand-thumbs-up" onclick="changeLikeColor('0')"></i>
+                        <i class="bi bi-heart" onclick="changeLoveColor('0')"></i>
+                    </div>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore consequuntur
+                    voluptatibus reiciendis sunt quaerat velit corrupti commodi repellendus dignissimos ut.
+                </p>
+            </div>
+
+        </div>
+
+        <aside class="friends-box">
+            <h1>Pessoas que você talvez conheça</h1>
+            <div class="friend">
+                <div>
+                    <div class="imagem"></div>
+                    <h3>@usuário</h3>
+                </div>
+                <button type="button" class="add-friend">Adicionar</button>
+            </div>
+
+            <div class="friend">
+                <div>
+                    <div class="imagem"></div>
+                    <h3>@usuário</h3>
+                </div>
+                <button type="button" class="add-friend">Adicionar</button>
+            </div>
+
+            <div class="friend">
+                <div>
+                    <div class="imagem"></div>
+                    <h3>@usuário</h3>
+                </div>
+                <button type="button" class="add-friend">Adicionar</button>
+            </div>
+
+        </aside>
+    </main>
+</body>
+
+</html>

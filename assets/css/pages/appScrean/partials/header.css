@@ -1,0 +1,55 @@
+@import '../../../global/imports.css';
+
+header {
+    width: 100%;
+    padding: 16px 43px;
+
+    position: fixed;
+
+    display: flex;
+    align-items: center;
+    gap: 320px;
+
+    background-color: var(--Header-background);
+}
+
+header img {
+    width: 60px;
+    cursor: pointer;
+}
+
+.header-busca {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    gap: 10px;
+    width: 670px;
+    padding: 10px 29px 10px 18px;
+    border-radius: 25px;
+    background: var(--Dark-grey);
+}
+
+.header-busca input {
+    width: 100%;
+    color: var(--Neutral-Lightest);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+
+    background: none;
+    outline: none;
+
+    border: none;
+}
+
+.header-busca input::placeholder {
+    color: var(--Placeholder-color);
+}
+
+.header-busca i {
+    font-size: 25px;
+    color: #F2F2F2;
+}

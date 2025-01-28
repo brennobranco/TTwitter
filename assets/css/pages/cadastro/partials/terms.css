@@ -1,0 +1,19 @@
+@import '../../../global/imports.css';
+
+.terms-container p {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+
+    text-align: center;
+}
+
+.terms-container p a {
+    color: var(--Cyan);
+    cursor: pointer;
+}
+
+.terms-container input[type="checkbox"] {
+    margin-top: 5px;
+}

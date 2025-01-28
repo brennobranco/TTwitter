@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/pages/login/login.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="./assets/js/index.js" defer></script>
+    <title>TT - Login</title>
+</head>
+
+<body>
+    <main>
+        <img src="./assets/img/Logo TT.png" alt="Logo" class="img-logo">
+
+        <form id="form">
+
+            <h1>Bem vindo a plataforma TTwitter</h1>
+
+            <div class="login-container">
+
+                <div class="inputs-container">
+
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="exemple@gmail.com">
+                        <span class="error">Formato de email incorreto.</span>
+                    </div>
+
+                    <div class="input">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" placeholder="***********">
+                        <i class="bi bi-eye-fill"></i>
+                        <span class="error">Sua senha deve ter no mínimo 6 caracteres.</span>
+                    </div>
+
+                </div>
+
+                <a href="#" class="forget-password">Esqueci minha senha</a>
+
+                <button class="entry-btn" type="submit">Entrar</button>
+
+                <button class="register-btn" type="button">Registrar</button>
+
+            </div>
+
+            <div class="terms-container">
+                <p>Li e estou de acordo com os <a href="#">Termos</a> e <a href="#">Condições de uso.</a></p>
+            </div>
+
+        </form>
+    </main>
+</body>
+
+</html>

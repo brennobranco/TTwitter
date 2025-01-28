@@ -1,0 +1,107 @@
+@import '../../../global/imports.css';
+@import './animation.css';
+
+.post {
+    width: 100%;
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    border-radius: 10px;
+    border: 1px solid var(--Dark-grey);
+
+    padding: 47px 73px 32px 73px;
+    animation: create 0.5s forwards;
+}
+
+.post img {
+    max-width: 500px;
+    cursor: pointer;
+}
+
+.interactive-container {
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.user-container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.imagem {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background: #D9D9D9;
+    cursor: pointer;
+}
+
+.user-container h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: var(--Neutral-Lightest);
+
+    cursor: pointer;
+}
+
+.post-icons-container {
+    display: flex;
+    flex-direction: row;
+    gap: 18px;
+}
+
+.post-icons-container i {
+    font-size: 40px;
+    color: var(--Neutral-Lightest);
+
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.post p {
+    width: 100%;
+    white-space: normal;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    word-wrap: break-word;
+
+    color: var(--Neutral-Lightest);
+}
+
+.post .bi-x {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+
+    font-size: 40px;
+    color: #FFF;
+    cursor: pointer;
+
+    opacity: 0.7;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.post .bi-x:hover {
+    opacity: 1;
+}
+
+.like {
+    color: var(--Papel-Amassado-Cor-Terciria) !important;
+}
+
+.love {
+    color: var(--Love) !important;
+}

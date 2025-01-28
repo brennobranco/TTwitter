@@ -1,0 +1,69 @@
+@media (max-width: 1020px) {
+    main img {
+        width: 100px;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        gap: 20px;
+    }
+
+    form {
+        padding: 20px 50px;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 530px) {
+    form {
+        padding: 20px;
+    }
+
+    .terms-container {
+        gap: 5px;
+
+    }
+
+    .login-container {
+        width: 300px;
+    }
+
+    main img {
+        width: 80px;
+    }
+
+    main {
+        flex-direction: column-reverse;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 425px) {
+    form h1 {
+        font-size: 20px;
+    }
+
+    .login-container {
+        width: 250px;
+    }
+
+    .terms-container p,
+    .forget-password {
+        font-size: 12px;
+    }
+
+    .register-btn {
+        padding: 0px;
+        height: 37px;
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .entry-btn {
+        margin-top: 4px;
+    }
+
+    .error {
+        font-size: 11px;
+    }
+}

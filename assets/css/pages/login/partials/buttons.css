@@ -1,0 +1,43 @@
+@import '../../../global/imports.css';
+
+.entry-btn {
+    width: 100%;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+
+    color: var(--Neutral-Lightest);
+    background-color: var(--Cyan);
+
+    padding: 15px 0px;
+    margin-top: 20px;
+
+    border-radius: 8px;
+    border: none;
+
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.entry-btn:hover {
+    scale: 1.01
+}
+
+.register-btn {
+    width: 90px;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+
+    color: var(--Cyan);
+
+    border: none;
+
+    cursor: pointer;
+}

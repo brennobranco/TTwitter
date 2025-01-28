@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/pages/cadastro/cadastro.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <script src="./assets/js/cadastro.js" defer></script>
+    <title>TT - Cadastro</title>
+</head>
+
+<body>
+    <main>
+        <form id="form">
+
+            <h1>Cadastro</h1>
+
+            <div class="login-container">
+
+                <div class="inputs-container">
+
+                    <div class="input">
+                        <label for="name">Nome</label>
+                        <input type="text" id="name" placeholder="nome de usuário">
+                        <span class="error">Seu nome deve ter no mínimo 3 caracteres.</span>
+                    </div>
+
+                    <div class="input">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="exemple@gmail.com">
+                        <span class="error">Formato de email incorreto.</span>
+                    </div>
+
+                    <div class="input" id="pass-inpt">
+                        <label for="data">Data de nascimento</label>
+                        <input type="text" id="data" placeholder="xx/xx/xxxx" maxlength="10">
+                        <span class="error">Formato de data incorreto.</span>
+                    </div>
+
+                    <div class="input" id="confirm-pass-inpt">
+                        <label for="password">Senha</label>
+                        <input type="password" id="password" placeholder="***********" class="form-control">
+                        <i class="bi bi-eye-fill"></i>
+                        <span class="error">Sua senha deve ter no mínimo 6 caracteres.</span>
+                    </div>
+
+                    <div class="input">
+                        <label for="confirm-password">Confirme sua senha</label>
+                        <input type="password" id="confirm-password" placeholder="***********" class="form-control">
+                        <i class="bi bi-eye-fill"></i>
+                        <span class="error">As senhas devem ser iguais.</span>
+                    </div>
+
+                </div>
+
+                <div class="terms-container">
+                    <input type="checkbox" id="terms-checkbox">
+                    <p>Li e estou de acordo com os <a href="#">Termos</a> e <a href="#">Condições de uso.</a></p>
+                    <span class="error">Você deve aceitar para prosseguir.</span>
+                </div>
+
+                <button class="register-btn" type="submit">Cadastrar</button>
+
+                <button class="entry-btn" type="button">Fazer login</button>
+
+            </div>
+
+        </form>
+
+        <img src="./assets/img/Logo TT.png" alt="Logo" class="img-logo">
+    </main>
+</body>
+
+</html>

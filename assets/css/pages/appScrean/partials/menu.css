@@ -1,0 +1,25 @@
+@import '../../../global/imports.css';
+
+.menu-navbar {
+    top: 0;
+    left: 0;
+    margin: 139px 36px 0px 36px;
+    position: fixed;
+}
+
+.menu-navbar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.navbar-itens {
+    width: 47px;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.navbar-itens:hover {
+    scale: 1.1;
+}

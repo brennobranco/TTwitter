@@ -1,0 +1,96 @@
+@import '../../../global/imports.css';
+
+.posts-area {
+    max-width: 670px;
+    width: 670px;
+
+    height: 100%;
+
+    margin: 37px 0px 11px -370px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+#post-form {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    border-radius: 10px;
+    border: 1px solid var(--Dark-grey);
+
+    padding: 20px 33px 22px 31px;
+}
+
+#post-form textarea {
+    background: none;
+    border: none;
+    outline: none;
+    resize: none;
+
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1px;
+
+    color: var(--Neutral-Lightest);
+}
+
+#post-form textarea::placeholder {
+    color: var(--Neutral-Lightest);
+}
+
+.post-btns-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+#image {
+    display: none;
+}
+
+.icons-container {
+    display: flex;
+    gap: 11px;
+    width: fit-content;
+}
+
+.icons-container img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.icons-container img:hover {
+    scale: 1.1;
+}
+
+.post-btns-container button {
+    padding: 12px 30px;
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--Black);
+
+    background-color: var(--Papel-Amassado-Cor-Terciria);
+    border: none;
+    border-radius: 10px;
+
+    cursor: pointer;
+
+    transition: all 0.1s ease-in-out;
+}
+
+.post-btns-container button:hover {
+    scale: 1.02;
+}
