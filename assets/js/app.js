@@ -23,7 +23,7 @@ form.addEventListener("submit", function (e) {
     const imgInput = document.querySelector("#image")
     const imgFile = imgInput.files[0]
 
-    if (textArea.trim() == "")
+    if (textArea.trim() == "" && !imgFile)
         return
 
     const newPost = document.createElement('div')

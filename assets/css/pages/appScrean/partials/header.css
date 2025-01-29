@@ -3,6 +3,7 @@
 header {
     width: 100%;
     padding: 16px 43px;
+    z-index: 1;
 
     position: fixed;
 
