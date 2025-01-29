@@ -1,0 +1,245 @@
+@import '../../../global/variables.css';
+
+@media (max-width: 1700px) {
+    header {
+        gap: 150px;
+    }
+
+    .header-busca {
+        width: 50%;
+    }
+}
+
+@media (max-width: 1285px) {
+    header {
+        gap: 100px;
+    }
+
+    .posts-area {
+        max-width: 500px;
+    }
+
+    .post {
+        padding: 27px 53px 22px 33px;
+    }
+
+    .post .bi-x {
+        font-size: 30px;
+    }
+
+    .post-icons-container i {
+        font-size: 30px;
+    }
+
+    .post .imagem {
+        width: 35px;
+        height: 35px;
+    }
+
+    .post img {
+        max-width: 400px;
+        max-height: 400px;
+    }
+
+    .header-busca {
+        width: 60%;
+    }
+
+    .friends-box {
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 1100px) {
+
+    .friends-box {
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        margin: 94px 0px 0px 0px;
+        right: auto;
+        gap: 5px;
+
+        background: var(--Body-color);
+        z-index: 1;
+        padding: 10px 10px 16px 10px;
+        overflow: scroll;
+    }
+
+    .menu-navbar {
+        margin-top: 240px;
+    }
+
+    .friends-box h1 {
+        width: fit-content;
+    }
+
+    .posts-area {
+        margin: 167px 0px;
+    }
+
+    .friends-box .responsive {
+        flex-direction: row;
+    }
+
+    .friends-box .responsive button {
+        display: none;
+    }
+
+    .friend {
+        width: fit-content;
+    }
+
+    .friend div {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .header-busca {
+        width: 70%;
+    }
+
+    .menu-navbar {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        top: auto;
+        bottom: 0;
+        left: auto;
+        margin: 0;
+        z-index: 10;
+
+        background: var(--Header-background);
+    }
+
+    .menu-navbar ul {
+        flex-direction: row;
+        padding: 16px;
+    }
+
+    .menu-navbar ul img {
+        width: 30px;
+    }
+
+    .friends-box .imagem {
+        width: 40px;
+        height: 40px;
+    }
+
+    .friend div h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        gap: 50px;
+    }
+
+    .posts-area {
+        max-width: 400px;
+        margin: 140px 0px;
+    }
+
+    .post img {
+        max-width: 300px;
+        max-height: 300px;
+    }
+
+    .post p {
+        font-size: 12px;
+    }
+
+    .post {
+        animation: createMobile 0.5s forwards;
+    }
+}
+
+@media (max-width: 465px) {
+    header {
+        padding: 11px 27px 18px 20px;
+        gap: 20px;
+    }
+
+    .header-busca {
+        width: 100%;
+        padding: 2px 20px 2px 18px;
+    }
+
+    .header-busca i {
+        font-size: 22px;
+    }
+
+    header img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .header-busca input {
+        font-size: 16px;
+    }
+
+    .posts-area {
+        max-width: 330px;
+        gap: 15px;
+    }
+
+    .post img {
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .post .user-container {
+        gap: 8px;
+    }
+
+    .post .user-container h3 {
+        font-size: 16px;
+    }
+
+    .post .post-icons-container {
+        gap: 8px;
+    }
+
+    .post .post-icons-container i {
+        font-size: 20px;
+    }
+
+    .friends-box {
+        margin-top: 68px;
+        padding-bottom: 10px;
+    }
+}
+
+@media (max-width: 320px) {
+    .posts-area {
+        max-width: 290px;
+    }
+
+    .post {
+        padding: 32px 40px;
+    }
+
+    .post .bi-x {
+        top: 2%;
+        right: 2%;
+        font-size: 20px;
+    }
+
+    .post img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+
+    #post-form {
+        padding: 20px 20px;
+    }
+
+    .post-btns-container {
+        align-items: center;
+        justify-content: space-between;
+    }
+}

@@ -3,6 +3,9 @@ const post_area = document.querySelector(".posts-area")
 const form = document.querySelector("#post-form")
 let index = 1
 
+window.addEventListener("load", updateText);
+window.addEventListener("resize", updateText);
+
 add_friend.forEach(element => {
     element.addEventListener("click", function () {
         if (this.textContent === "Adicionar") {
@@ -98,8 +101,22 @@ function changeLoveColor(id) {
 
 function removePost(id) {
     post = document.getElementById(id)
-    post.style.animation = "delete 0.3s forwards"
+    if (window.innerWidth > 600) {
+        post.style.animation = "deleteDesktop 0.3s forwards"
+    } else {
+        post.style.animation = "deleteMobile 0.3s forwards"
+    }
     setTimeout(() => {
         post.remove()
     }, 300)
+}
+
+function updateText() {
+    const text = document.querySelector(".friends-box").querySelector("h1")
+    if (window.innerWidth <= 1100) {
+        text.innerText = "Talvez você conheça"
+    }
+    else {
+        text.innerText = "Pessoas que você talvez conheça"
+    }
 }

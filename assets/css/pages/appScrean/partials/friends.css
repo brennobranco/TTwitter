@@ -12,6 +12,12 @@
     gap: 16px;
 }
 
+.friends-box .responsive {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
 .friends-box h1 {
     width: 100%;
     color: var(--Neutral-Lightest);

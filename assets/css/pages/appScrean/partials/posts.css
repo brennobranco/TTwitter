@@ -14,7 +14,7 @@
     border: 1px solid var(--Dark-grey);
 
     padding: 47px 73px 32px 73px;
-    animation: create 0.5s forwards;
+    animation: createDesktop 0.5s forwards;
 }
 
 .post img {

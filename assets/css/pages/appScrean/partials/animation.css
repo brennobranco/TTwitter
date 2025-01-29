@@ -1,4 +1,4 @@
-@keyframes create {
+@keyframes createDesktop {
     0% {
         opacity: 0;
         transform: translateX(-50%);
@@ -10,7 +10,7 @@
     }
 }
 
-@keyframes delete {
+@keyframes deleteDesktop {
     0% {
         opacity: 1;
         transform: translateX(0);
@@ -19,5 +19,29 @@
     100% {
         opacity: 0;
         transform: translateX(+50%);
+    }
+}
+
+@keyframes createMobile {
+    0% {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes deleteMobile {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    100% {
+        opacity: 0;
+        transform: translateX(100%);
     }
 }
