@@ -6,8 +6,9 @@ const confirm_password = document.querySelector("#confirm-password")
 const error_message = document.querySelectorAll(".error")
 const data = document.querySelector("#data")
 
-form.addEventListener("submit", (event) => {
-    event.preventDefault();
+// Validação de formulário de cadastro
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
 
     const name = document.querySelector("#name").value
     const email = document.querySelector("#email").value
@@ -64,13 +65,14 @@ form.addEventListener("submit", (event) => {
         error_message[5].classList.remove("display-error")
     }
 
-    window.location.href = "./app.html";
+    window.location.href = "./app.html"; // Redireciona para a página principal do app
 })
 
 login_btn.addEventListener("click", () => {
-    window.location.href = "./index.html";
+    window.location.href = "./index.html"; // Redireciona para a página de login
 })
 
+// Possibilita que o usuário veja a senha e oculte novamente
 eye.forEach(element => {
     element.addEventListener("click", function () {
 
@@ -87,6 +89,7 @@ eye.forEach(element => {
     })
 });
 
+// Formata a data
 data.addEventListener("input", () => {
     let formatador = data.value
 
@@ -105,6 +108,7 @@ data.addEventListener("input", () => {
     data.value = formatador;
 })
 
+// Verifica o formato do email
 function verify_email(email) {
     const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return regex.test(email);

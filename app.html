@@ -11,6 +11,7 @@
 </head>
 
 <body>
+    <!-- Cabeçalho -->
     <header>
         <img src="./assets/img/Logo TT.png" alt="logo">
         <div class="header-busca">
@@ -18,19 +19,23 @@
             <label for="busca"><i class="bi bi-search"></i></label>
         </div>
     </header>
-
+    <!--Conteúdo princial-->
     <main>
+        <!--Menu lateral-->
         <nav class="menu-navbar">
             <ul>
-                <li class="navbar-itens"><img src="./assets/img/HomeOutlined.png" alt="Início"></li>
-                <li class="navbar-itens"><img src="./assets/img/BellOutlined.png" alt="Notificações"></li>
-                <li class="navbar-itens"><img src="./assets/img/CommentOutlined.png" alt="Mensagens"></li>
-                <li class="navbar-itens"><img src="./assets/img/SettingOutlined.png" alt="Configurações"></li>
+                <li class="navbar-itens noFuncionality"><img src="./assets/img/HomeOutlined.png" alt="Início"></li>
+                <li class="navbar-itens noFuncionality"><img src="./assets/img/BellOutlined.png" alt="Notificações">
+                </li>
+                <li class="navbar-itens noFuncionality"><img src="./assets/img/CommentOutlined.png" alt="Mensagens">
+                </li>
+                <li class="navbar-itens noFuncionality"><img src="./assets/img/SettingOutlined.png" alt="Configurações">
+                </li>
             </ul>
         </nav>
-
+        <!--Zona de postagem-->
         <div class="posts-area">
-
+            <!--Formulário para posts-->
             <form id="post-form">
                 <textarea placeholder="No que está pensando...?" rows="3" id="text-area"></textarea>
 
@@ -41,13 +46,13 @@
                             <input type="file" accept="imagem/*" id="image">
                             <img src="./assets/img/ic_baseline-image.png" alt="inserir imagem">
                         </label>
-                        <img src="./assets/img/mingcute_emoji-fill.png" alt="inserir emoji">
-                        <img src="./assets/img/ic_outline-link.png" alt="inserir link">
+                        <img src="./assets/img/mingcute_emoji-fill.png" alt="inserir emoji" class="noFuncionality">
+                        <img src="./assets/img/ic_outline-link.png" alt="inserir link" class="noFuncionality">
                     </div>
                     <button type="submit">Postar</button>
                 </div>
             </form>
-
+            <!--Post de exemplo-->
             <div class="post" id="0">
                 <i class="bi bi-x" onclick="removePost('0')"></i>
                 <img src="./assets/img/foto_exemplo.png" alt="imagem do post">
@@ -57,7 +62,7 @@
                         <h3>@usuário</h3>
                     </div>
                     <div class="post-icons-container">
-                        <i class="bi bi-chat-dots"></i>
+                        <i class="bi bi-chat-dots noFuncionality"></i>
                         <i class="bi bi-hand-thumbs-up" onclick="changeLikeColor('0')"></i>
                         <i class="bi bi-heart" onclick="changeLoveColor('0')"></i>
                     </div>
@@ -68,7 +73,7 @@
             </div>
 
         </div>
-
+        <!--Área adicionar amigos-->
         <aside class="friends-box">
             <h1>Pessoas que você talvez conheça</h1>
             <div class="responsive">
